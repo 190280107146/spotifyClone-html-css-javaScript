@@ -138,7 +138,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     element = Array.from(document.getElementsByClassName('songItemPlay'))[songIndex];
     element.classList.remove('fa-play-circle');
     element.classList.add('fa-pause-circle');
-    audioElement.src = `/spotifyClone-html-css-javaScript//${songIndex+1}.mp3`;
+    audioElement.src = `/spotifyClone-html-css-javaScript/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
