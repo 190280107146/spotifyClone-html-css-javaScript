@@ -2,7 +2,7 @@ console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('/spotifyClone-html-css-javaScript/songs/1.mp3');
+let audioElement = new Audio('/spotifyClone-html-css-javaScript/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Jugnu(Pagalworld.pw)", filePath: "/spotifyClone-html-css-javaScript/songs/1.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/1.jpg"},
-    { songName: "Oo Bolega ya Oo Oo Bolega", filePath: "/spotifyClone-html-css-javaScript/songs/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/2.jpg"},
-    {songName: "Rataan Lambiyan", filePath: "/spotifyClone-html-css-javaScript/songs/3.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/3.jpg"},
-    {songName: "Dance Meri Rani", filePath: "/spotifyClone-html-css-javaScript/songs/4.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/4.jpg"},
-    {songName: "Chand wala mukhda leke", filePath: "/spotifyClone-html-css-javaScript/songs/5.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/5.jpg"},
-    {songName: "Mohabbat hai", filePath: "/spotifyClone-html-css-javaScript/songs/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/6.jpg"},
-    {songName: "Meri jindgi hai tu", filePath: "/spotifyClone-html-css-javaScript/songs/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/7.jpg"},
-    {songName: "Saami Saami", filePath: "/spotifyClone-html-css-javaScript/songs/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/8.jpg"},
-    {songName: "tumse jyda tumse pyar kiya", filePath: "/spotifyClone-html-css-javaScript/songs/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/9.jpg"},
-    {songName: "Shrivalli", filePath: "/spotifyClone-html-css-javaScript/songs/4.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/10.jpg"},
+    {songName: "Jugnu(Pagalworld.pw)", filePath: "/spotifyClone-html-css-javaScript/1.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/1.jpg"},
+    { songName: "Oo Bolega ya Oo Oo Bolega", filePath: "/spotifyClone-html-css-javaScript/2.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/2.jpg"},
+    {songName: "Rataan Lambiyan", filePath: "/spotifyClone-html-css-javaScript/3.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/3.jpg"},
+    {songName: "Dance Meri Rani", filePath: "/spotifyClone-html-css-javaScript/4.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/4.jpg"},
+    {songName: "Chand wala mukhda leke", filePath: "/spotifyClone-html-css-javaScript/5.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/5.jpg"},
+    {songName: "Mohabbat hai", filePath: "/spotifyClone-html-css-javaScript/6.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/6.jpg"},
+    {songName: "Meri jindgi hai tu", filePath: "/spotifyClone-html-css-javaScript/7.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/7.jpg"},
+    {songName: "Saami Saami", filePath: "/spotifyClone-html-css-javaScript/8.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/8.jpg"},
+    {songName: "tumse jyda tumse pyar kiya", filePath: "/spotifyClone-html-css-javaScript/9.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/9.jpg"},
+    {songName: "Shrivalli", filePath: "/spotifyClone-html-css-javaScript/10.mp3", coverPath: "/spotifyClone-html-css-javaScript/covers/10.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
