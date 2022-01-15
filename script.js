@@ -72,7 +72,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
             songIndex = parseInt(e.target.id);
             e.target.classList.remove('fa-play-circle');
             e.target.classList.add('fa-pause-circle');
-            audioElement.src = `songs/${songIndex+1}.mp3`;
+            audioElement.src = `/spotifyClone-html-css-javaScript/${songIndex+1}.mp3`;
             masterSongName.innerText = songs[songIndex].songName;
             audioElement.currentTime = 0;
             audioElement.play();
@@ -85,7 +85,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
             songIndex = parseInt(e.target.id);
             e.target.classList.remove('fa-play-circle');
             e.target.classList.add('fa-pause-circle');
-            audioElement.src = `songs/${songIndex+1}.mp3`;
+            audioElement.src = `/spotifyClone-html-css-javaScript/${songIndex+1}.mp3`;
             masterSongName.innerText = songs[songIndex].songName;
             audioElement.currentTime = myProgressBar.value;
             audioElement.play();
@@ -117,7 +117,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     element = Array.from(document.getElementsByClassName('songItemPlay'))[songIndex];
     element.classList.remove('fa-play-circle');
     element.classList.add('fa-pause-circle');
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `/spotifyClone-html-css-javaScript/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -138,7 +138,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     element = Array.from(document.getElementsByClassName('songItemPlay'))[songIndex];
     element.classList.remove('fa-play-circle');
     element.classList.add('fa-pause-circle');
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `/spotifyClone-html-css-javaScript//${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
